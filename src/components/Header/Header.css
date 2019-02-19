@@ -1,0 +1,44 @@
+.Header {
+  height: 40px;
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+}
+
+.Header h1 {
+  margin: 0;
+}
+
+.Header h1 a {
+  text-decoration: none;
+}
+
+.Header a {
+  color: #444;
+}
+
+.Header__not-logged-in {
+  display: flex;
+  flex-direction: column;
+}
+
+.Header__not-logged-in .Hyph {
+  display: none;
+}
+
+@media screen and (min-width: 450px) {
+  .Header {
+    align-items: baseline;
+  }
+  .Header h1 {
+    font-size: 22pt;
+  }
+
+  .Header__not-logged-in {
+    flex-direction: row;
+  }
+
+  .Header__not-logged-in .Hyph {
+    display: initial;
+  }
+}
